@@ -1,0 +1,175 @@
+/*************** 
+ * BASE STYLES *
+ ***************/
+
+/* Variables */
+
+:root {
+  --white: #ffffff;
+  --white2: #f0f0f0;
+  --btn-color: #4285f4;
+  --btn-color-hover: #1d84d5;
+  --navbar: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/******** 
+ * LOGO *
+ ********/
+
+/* Link containing the logo img */
+/* This will only be shown on tablets and desktop so will hide it*/
+.logo {
+  position: relative;
+  left: 2.5rem;
+  top: 2.5rem;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  display: none;
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
+/* Google Arts and Culture */
+.logo img {
+  width: 21rem;
+}
+
+/******************** 
+ * BACKGROUND VIDEO *
+ ********************/
+
+.bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*********** 
+ * CONTENT *
+ ***********/
+
+/* Container for the heading, the paragraph and the button */
+.content {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content p {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 6rem 0;
+  max-width: 80%;
+  text-align: center;
+  letter-spacing: 0.045rem;
+  word-spacing: 0.045rem;
+}
+
+.btn {
+  padding: 1.5rem;
+  background: var(--btn-color);
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--btn-color-hover);
+}
+
+/**********
+ * NAVBAR *
+ **********/
+
+/* The navbar will only be shown on tablets and desktop */
+.navbar {
+  display: none;
+  background: var(--navbar);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 4rem;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover img,
+.navbar a:hover span {
+  opacity: 1;
+}
+
+.navbar .home-icon,
+.navbar a span {
+  transition: all 0.5s ease;
+}
+
+.navbar .home-icon {
+  width: 2rem;
+  opacity: 0.5;
+  margin-right: 1rem;
+}
+
+/* The Hidden Worlds of the National Parks */
+.navbar a span {
+  font-size: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--white2);
+  opacity: 0.5;
+}
+
+.audio-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.audio-btn img {
+  width: 1.7rem;
+  opacity: 0.5;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+}
+
+.audio-btn img:hover {
+  opacity: 1;
+}

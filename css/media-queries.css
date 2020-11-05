@@ -1,0 +1,45 @@
+/* These styles will be applied on devices that have a width of at least 479px and have a landscape orientation */
+@media screen and (min-width: 479px) and (orientation: landscape) {
+  .content {
+    width: 60%;
+  }
+
+  .content p {
+    margin: 4rem 0;
+  }
+}
+
+/* These styles will be applied on devices that have a width of at least 768px */
+@media screen and (min-width: 768px) {
+  .content {
+    width: 80%;
+  }
+
+  .content p {
+    margin: 2rem 0 3rem 0;
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+}
+
+/* These styles will be applied on devices that have a width of at least 992px */
+@media screen and (min-width: 992px) {
+  .content {
+    width: 50%;
+  }
+}
+
+/* These styles will be applied on devices that have a width of at least 1024px */
+@media screen and (min-width: 1024px) {
+  .content p {
+    margin: 5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
